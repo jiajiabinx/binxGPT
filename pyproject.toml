@@ -10,6 +10,7 @@ python = "^3.8"
 Flask = "^2.2.3"
 openai = "^0.27.2"
 python-dotenv = "^1.0.0"
+gunicorn = "^20.1.0"
 
 [tool.poetry.dev-dependencies]
 Flask = "^2.2.3"
