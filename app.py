@@ -4,11 +4,12 @@ from dotenv import load_dotenv
 from utilities import *
 from flask import Flask, request, jsonify,render_template
 
+from setup import *
+
 load_dotenv()
 
 app = Flask(__name__)
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
 messages =  []
 
 @app.route("/")

@@ -14,6 +14,8 @@ RUN pip3 install poetry
 
 RUN poetry config virtualenvs.create false
 
-RUN poetry install --no-dev
+RUN poetry install --only main
+
+ENV PORT=443
 
 CMD gunicorn --bind 0.0.0.0:$PORT app:app
